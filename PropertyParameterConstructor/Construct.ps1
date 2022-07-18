@@ -18,6 +18,10 @@ $GroupBox = New-Object System.Windows.Forms.GroupBox
 $RadioButton = New-Object System.Windows.Forms.RadioButton
 
 
+
+#added some comment text for Github
+
+
 $combo = ($form, $textbox, $button, $label, $checkbox, $combobox, $GroupBox, $RadioButton) | Get-Member | Where-Object { $_.membertype -eq "Property " }
 
 $unique = $combo | Select-Object -Unique
